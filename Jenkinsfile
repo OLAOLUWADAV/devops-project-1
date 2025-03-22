@@ -20,7 +20,7 @@ pipeline {
 
         stage('Terraform Init') {
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-credentials-David']]) {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-David']]) {
                     // Change directory to "infra" if your Terraform code is located there.
                     dir('infra') {
                         sh 'echo "=================Terraform Init=================="'
@@ -35,7 +35,7 @@ pipeline {
                 expression { return params.PLAN_TERRAFORM }
             }
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-credentials-David']]) {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-David']]) {
                     dir('infra') {
                         sh 'echo "=================Terraform Plan=================="'
                         sh 'terraform plan'
@@ -49,7 +49,7 @@ pipeline {
                 expression { return params.APPLY_TERRAFORM }
             }
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-credentials-David']]) {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-David']]) {
                     dir('infra') {
                         sh 'echo "=================Terraform Apply=================="'
                         sh 'terraform apply -auto-approve'
@@ -63,7 +63,7 @@ pipeline {
                 expression { return params.DESTROY_TERRAFORM }
             }
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-credentials-rwagh']]) {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-David']]) {
                     dir('infra') {
                         sh 'echo "=================Terraform Destroy=================="'
                         sh 'terraform destroy -auto-approve'
