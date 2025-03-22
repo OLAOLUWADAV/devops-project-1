@@ -8,9 +8,9 @@ cidr_public_subnet   = ["10.0.1.0/24", "10.0.2.0/24"]
 cidr_private_subnet  = ["10.0.3.0/24", "10.0.4.0/24"]
 eu_availability_zone = ["eu-central-1a", "eu-central-1b"]
 
-public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDwmgMHFJE7J4qepIzAZL3/yC6J0zsEAb/oHYL+WBBDNUjSH4TeHUnHVNe9b/pyPcub+O/HNvlGrzSxUp0xT0b3O7kkTtgBKiG8NaBbonj+c7byfOGER80DYxc5adlBltuIDd8StFe7OMzbYyUSr1mdxDTIWm/OoE39G/fu3hTqUGkykv072GAy8nMFejITRw9pf+53B9ziE5rsdOUH4uqBiQa/Ng/qKo7h9MtJGcloRATYiObXwAgrHtt3sDrtvkq2ZceT906/BJm1Twlm+BHlQecHV18Ak3bzm/6HzlsA/q+yORsoB+VxSUxvVy0nXTc1X8vJAD4KSYVL5DTrpisdnQAIcuqAbea+LMku2o4sdnrrIlUi8/8BXeVbI4TNNGd0+sWpCVcDEhb4gyA/XXTvloQyjTYrL4+am/9XEY6NGdsrPK74sjvtpUZPUrmzTJ/mJWG5ncGY88GAj+YZAsY5pnAqh2CkR2TUpglugldnWyrppbe2QyC9iQkgUGSkBTs= rahulwagh@Rahuls-MacBook-Pro.local"
+public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDA8phGUBsdKEprqZrMAQ4lgNZdsz7ynV1TwHMJ3XtvaZ8x33jJ+F8Ya70P61f2Z0zOxyqyJO6A2M4an3byfOFmKxXPM4PDiNrlapi5vJcXKlmkuoxNvtZ6JCfM+hp+FAmJtxAlb2sNjHkhjgQcC/A/nA0CnIBKW+zk+cU4p/R/LbdwRZYeFHi/co5d6qb12OReMuxY8pVCLAyQ1YG2Y3hOnCWtBBdimnNWBSW5WapGHDsJfI5eAKtFQwkb+8qA/ak/zgk/xVzoVl5hJYAcd6RHJ0ScWu4kDgqiLArBoCasgMFUVcivBndq+5/RyYL5eKiIQ6z+VyR48Bm/ijo5EODX"
 ec2_ami_id     = "ami-06dd92ecc74fdfb36"
 
 ec2_user_data_install_apache = ""
 
-domain_name = "jhooq.org"
+domain_name = "jenkins.3.250.187.135.nip.io"
